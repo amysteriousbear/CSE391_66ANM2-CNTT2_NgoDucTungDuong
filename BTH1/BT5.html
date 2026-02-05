@@ -2,73 +2,143 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>HR Management - Semantic HTML5</title>
+    <title>HR Management</title>
 </head>
 <body>
 
     <header>
-        <h1>HR Management</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <form role="search">
-            <input type="search" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
+        <strong>HR Management</strong>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
     </header>
 
-    <main>
-        <section>
-            <header>
-                <h2>Employee</h2>
-                <button type="button">+ Add</button>
-            </header>
+    <hr>
 
-            <table border="1"> <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Position</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Fatima Beatriz</td>
-                        <td>FatimaBeatriz@gmail.com</td>
-                        <td>0985674321</td>
-                        <td>Staff</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
-		    <tr>
-                        <td>1</td>
-                        <td>Gabriel</td>
-                        <td>Gabriel@gmail.com</td>
-                        <td>0986674321</td>
-                        <td>Staff</td>
-                        <td>
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
-                    </tbody>
-            </table>
-        </section>
+    <main>
+        <h1>Employee</h1>
+        <button type="button" onclick="document.getElementById('addModal').showModal()">+ Add</button>
+
+        <br><br>
+
+        <table border="1" width="100%" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Position</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fatima Beatriz</td>
+                    <td>Fatima Beatriz@gmail.com</td>
+                    <td>0985674321</td>
+                    <td>Staff</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gabriel Hanna</td>
+                    <td>Gabriel Hanna@gmail.com</td>
+                    <td>0353674321</td>
+                    <td>Staff</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charles Diya</td>
+                    <td>Charles Diya@gmail.com</td>
+                    <td>0985674321</td>
+                    <td>Staff</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Frank Lamdo</td>
+                    <td>Frank Lamdo@gmail.com</td>
+                    <td>0984687891</td>
+                    <td>Manager</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Louis Tom</td>
+                    <td>Louis Tom@gmail.com</td>
+                    <td>0987654325</td>
+                    <td>Staff</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                </tbody>
+        </table>
     </main>
 
-    <footer>
-        <p>&copy; 2024 HR Management System</p>
-    </footer>
+    <dialog id="addModal">
+        <form method="dialog">
+            <header>
+                <strong>New Employee</strong>
+                <button type="button" onclick="this.closest('dialog').close()" style="float: right;">X</button>
+            </header>
+            <hr>
+            
+            <p>
+                <label>Name</label><br>
+                <input type="text">
+            </p>
+            
+            <p>
+                <label>Email</label><br>
+                <input type="email">
+            </p>
+
+            <p>
+                <label>Phone</label><br>
+                <input type="text">
+            </p>
+
+            <p>
+                <label>Position</label><br>
+                <select>
+                    <option>-- Select Position --</option>
+                    <option>Staff</option>
+                    <option>Manager</option>
+                    <option>CEO</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Sex</label><br>
+                <input type="radio" name="sex" id="male"> <label for="male">Male</label>
+                <input type="radio" name="sex" id="female"> <label for="female">Female</label>
+            </p>
+
+            <hr>
+            <div style="text-align: right;">
+                <button type="submit">Save</button>
+                <button type="button" onclick="this.closest('dialog').close()">Cancel</button>
+            </div>
+        </form>
+    </dialog>
 
 </body>
-
 </html>
