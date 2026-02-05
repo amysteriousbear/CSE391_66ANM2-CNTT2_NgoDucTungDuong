@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Information Form</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        
+        <section>
+            <h3>Basic Info</h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><label>Employee ID</label></td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td>Dodsworth</td>
+                </tr>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" id="fname" value="Anne"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender"> Male <br>
+                        <input type="radio" name="gender"> Female <br>
+                        <input type="radio" name="gender"> XXX <br>
+                        <input type="radio" name="gender" checked> ZZZ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>
+                        <input type="text" value="Sales Representative">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Suffix</td>
+                    <td>
+                        <input type="text" value="Ms.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>BirthDate</td>
+                    <td>
+                        <input type="text" value="1969-07-02 00:00:00">
+                    </td>
+                </tr>
+                <tr>
+                    <td>HireDate</td>
+                    <td>
+                        <input type="text" value="1994-11-15 00:00:00">
+                    </td>
+                </tr>
+                <tr>
+                    <td>SSN# (if applicable)</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Reports To</label></td>
+                    <td>
+                        <select>
+                            <option>Buchanan</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Contact Info</h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" placeholder="name@example.com"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <input type="text" value="7 HounstoothvRd.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input type="text" value="London">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Region</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Postal Code</td>
+                    <td>
+                        <input type="text" value="WG2 7LT">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <select>
+                            <option>Russian Federation</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>US Home Phone</td>
+                    <td>
+                        <input type="text" value="(234)234-2342">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo</td>
+                    <td>
+                        <input type="text" value="EmpID9.bmp">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Optional Info</h3>
+            <hr>
+            <table>
+                <tr>
+                    <td><label>Notes</label></td>
+                    <td>
+                        <textarea rows="5" cols="55">Anne has a BA degree in English from St.Lawrence College. She is fluent in French and German.ZZZ</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Preferred Shift</td>
+                    <td>
+                        <input type="checkbox"> Regular                     
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><input type="checkbox" checked> Gravy Yard</td>
+                </tr>
+                <tr> 
+                    <td>Ative?</td>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="down">Are you human?</td>
+                    <td>
+                        <font face="monospace" size="5">T I D A W O</font> <br>
+                        <div style="width: 450px; text-align: center;">
+                            <small>Click to change</small>
+                        </div>
+                        <input type="text" size="60">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <br>
+        <table width="100%" cellpadding="5">
+            <tr>
+                <td align="left">
+                    <button type="button"><</button>
+                    <button type="button">></button>
+                </td>
+                <td align="right">
+                    <button type="submit">Submit</button>
+                    <button type="button">Cancel</button>
+                </td>
+            </tr>
+        </table>
+        <small>* required</small>
+    </form>
+
+</body>
+</html>
