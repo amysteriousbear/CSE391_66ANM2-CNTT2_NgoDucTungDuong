@@ -1,0 +1,87 @@
+/* Reset cơ bản để tránh lỗi hiển thị giữa các trình duyệt */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 50px; /* Tạo khoảng trống để dễ nhìn */
+}
+
+/* Chiếc hộp ngoài cùng */
+.contact-wrapper {
+  max-width: 800px;
+  margin: 0 auto; /* Căn giữa màn hình */
+  border: 1px solid #555; /* Viền đen bao quanh form như trong ảnh */
+  padding: 30px;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Thiết lập form thành một cột linh hoạt */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Xếp các hàng từ trên xuống dưới */
+  gap: 15px; /* Khoảng cách đều đặn giữa các hàng */
+}
+
+/* Định dạng chung cho input và textarea */
+input, textarea {
+  width: 100%; /* Mặc định chiếm hết chỗ trống của hàng */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+/* --- XỬ LÝ FLEXBOX CHI TIẾT --- */
+
+/* Hàng 1: Ép 2 input nằm ngang và chia đều không gian */
+.flex-row {
+  display: flex;
+  gap: 15px; /* Khoảng cách giữa ô Name và Email */
+}
+
+.flex-row input {
+  flex: 1; /* Cốt lõi ở đây: Yêu cầu mỗi input chiếm đúng 1 phần không gian bằng nhau (50/50) */
+}
+
+/* Hàng 4: Căn chỉnh nút bấm và text */
+.form-footer {
+  display: flex;
+  justify-content: space-between; /* Đẩy Button sang trái kịch trần, đẩy Text sang phải kịch trần */
+  align-items: center; /* Căn giữa chúng theo chiều dọc để không bị lệch */
+  margin-top: 10px;
+}
+
+/* Định dạng nút bấm */
+button {
+  background-color: #73C2FB; /* Màu xanh lơ */
+  color: white;
+  border: 1px solid #5CA2D6;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #5CA2D6;
+}
+
+.note {
+  color: #888;
+  font-size: 0.9rem;
+}

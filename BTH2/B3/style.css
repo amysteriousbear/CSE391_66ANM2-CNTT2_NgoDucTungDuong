@@ -1,0 +1,83 @@
+/* 1. Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif; /* Font chữ hiện đại */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 2. Thiết lập nền và căn giữa trang web */
+.container {
+    background-color: #E0F7FA; /* Màu xanh nhạt */
+    min-height: 100vh;         /* Chiều cao tối thiểu bằng màn hình */
+    padding: 50px;             /* Khoảng cách lề trong */
+    display: flex;
+    flex-direction: column;    /* Xếp dọc: Tiêu đề trên, nội dung dưới */
+    align-items: center;       /* Căn giữa tất cả theo chiều ngang */
+}
+
+/* Tiêu đề lớn */
+.main-header h1 {
+    text-align: center;
+    font-family: 'DM Mono', monospace; /* Font kiểu máy đánh chữ */
+    margin-bottom: 60px;
+    font-size: 2rem;
+    max-width: 800px;
+}
+
+/* 3. Bố cục Flexbox: Chia 2 cột */
+.content-wrapper {
+    display: flex;             /* Kích hoạt Flexbox */
+    gap: 60px;                 /* Khoảng cách giữa 2 cột */
+    max-width: 1000px;         /* Giới hạn chiều rộng tối đa */
+    align-items: flex-start;   /* Căn hàng đầu (để cột phải không bị kéo giãn) */
+}
+
+/* --- CỘT TRÁI (CARD TRẮNG) --- */
+.card {
+    background: white;
+    padding: 40px;
+    flex: 1;                   /* Chiếm 1 phần không gian */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Tạo bóng mờ ảo diệu */
+    border-radius: 4px;        /* Bo góc nhẹ */
+}
+
+.card h3 {
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.card-desc {
+    color: #666; /* Màu chữ nhạt hơn chút */
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.author strong {
+    display: block; /* Xuống dòng */
+    color: #222;
+}
+
+.author span {
+    font-size: 0.8rem;
+    color: #5d9cec; /* Màu xanh dương của chức danh */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- CỘT PHẢI (VĂN BẢN) --- */
+.text-content {
+    flex: 1.2; /* Chiếm 1.2 phần không gian (rộng hơn cột trái chút) */
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.text-content p {
+    margin-bottom: 20px; /* Khoảng cách giữa các đoạn văn */
+}
