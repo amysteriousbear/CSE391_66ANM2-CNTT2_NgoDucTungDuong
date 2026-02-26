@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif; /* Font chữ hiện đại */
+    font-family: 'Railway', sans-serif; /* Font chữ hiện đại */
     line-height: 1.6;
     color: #333;
 }
@@ -24,7 +24,7 @@ body {
 /* Tiêu đề lớn */
 .main-header h1 {
     text-align: center;
-    font-family: 'DM Mono', monospace; /* Font kiểu máy đánh chữ */
+    font-family: 'Railway', monospace; /* Font kiểu máy đánh chữ */
     margin-bottom: 60px;
     font-size: 2rem;
     max-width: 800px;
@@ -42,18 +42,19 @@ body {
 .card {
     background: white;
     padding: 40px;
-    flex: 1;                   /* Chiếm 1 phần không gian */
+    flex: 0.5;                   /* Chiếm 1 phần không gian */
     box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Tạo bóng mờ ảo diệu */
     border-radius: 4px;        /* Bo góc nhẹ */
 }
 
 .card h3 {
-    font-family: 'DM Mono', monospace;
+    font-family: 'Railway', monospace;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
 .card-desc {
+    font-family: 'QuickSand';
     color: #666; /* Màu chữ nhạt hơn chút */
     margin-bottom: 40px;
     font-size: 0.9rem;
@@ -73,11 +74,14 @@ body {
 
 /* --- CỘT PHẢI (VĂN BẢN) --- */
 .text-content {
+    font-family: 'QuickSand';
     flex: 1.2; /* Chiếm 1.2 phần không gian (rộng hơn cột trái chút) */
     font-size: 0.95rem;
     color: #444;
 }
 
 .text-content p {
-    margin-bottom: 20px; /* Khoảng cách giữa các đoạn văn */
+    margin-bottom: 25px; /* Khoảng cách giữa các đoạn văn */
+    word-spacing: 3px;
+    line-height: 2;
 }

@@ -7,7 +7,7 @@
 }
 
 body {
-  padding: 50px; /* Tạo khoảng trống để dễ nhìn */
+  padding: 50px; /* Tạo khoảng trống */
 }
 
 /* Chiếc hộp ngoài cùng */
@@ -45,7 +45,7 @@ input::placeholder, textarea::placeholder {
   color: #aaa;
 }
 
-/* --- XỬ LÝ FLEXBOX CHI TIẾT --- */
+/* --- XỬ LÝ FLEXBOX --- */
 
 /* Hàng 1: Ép 2 input nằm ngang và chia đều không gian */
 .flex-row {
