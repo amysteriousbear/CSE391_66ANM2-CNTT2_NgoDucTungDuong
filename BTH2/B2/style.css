@@ -10,7 +10,7 @@ header {
     width: 100%;
     z-index: 10;
 }
-header .logo { color: yellow; font-style: italic; font-weight: bold; }
+header .logo { color: yellow; font-style: italic; font-weight: bold; font-size: 1.9rem; }
 header nav a { color: yellow; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
 
 /* Hero Section */
