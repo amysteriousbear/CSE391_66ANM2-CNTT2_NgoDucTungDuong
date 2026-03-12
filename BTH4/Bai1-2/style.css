@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #2563eb;
+    --danger-color: #ef4444;
+    --warning-bg: #fef9c3;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button#btnAdd {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f1f5f9;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.low-score {
+    background-color: var(--warning-bg);
+}
+
+.btn-delete {
+    background: none;
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: var(--danger-color);
+    color: white;
+}
+
+.stats-bar {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+    font-weight: bold;
+}

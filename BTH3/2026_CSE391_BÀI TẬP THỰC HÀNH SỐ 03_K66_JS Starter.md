@@ -400,11 +400,11 @@ $("#btnHello").on("click", function () {
 ```
 
 > Câu hỏi:
-> - Điểm giống nhau về chức năng giữa 2 đoạn code trên là gì?
+> - Điểm giống nhau về chức năng giữa 2 đoạn code trên là gì? Đều là lắng nghe sự kiện  
 > - Điểm khác nhau về cú pháp là gì (`document.getElementById` vs `$("#id")`, `addEventListener` vs `.on`)?
 > - Em hãy tra cứu nhanh “What is jQuery used for?” và ghi 2 ý chính:
->   1. ................................................................
->   2. ................................................................
+>   1. Đơn giản hóa việc thao tác với DOM và Sự kiện: jQuery giúp việc chọn các phần tử HTML, thay đổi nội dung, hoặc bắt các sự kiện (click, hover...) trở nên ngắn gọn và dễ đọc hơn nhiều so với JS thuần.
+>   2. Xử lý hiệu ứng và Ajax dễ dàng: Cung cấp các hàm có sẵn để tạo hiệu ứng chuyển động (slide, fade) và gửi yêu cầu lấy dữ liệu từ máy chủ (Ajax) mà không cần tải lại trang chỉ với vài dòng code
 
 ---
 
